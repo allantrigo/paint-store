@@ -20,9 +20,12 @@ export class UserService {
     });
   }
 
-  login(user: User): Observable<{ token: string }> {
+  login(user: User) {
     const url = this.API_HOST + 'login';
-    return this.httpClient.post<{ token: string }>(url, user);
+    return this.httpClient.post(url, user, {
+      observe: 'response',
+      responseType: 'json',
+    });
   }
 
   logout(): Observable<any> {
