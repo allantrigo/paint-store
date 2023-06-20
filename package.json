@@ -19,13 +19,16 @@
         "@angular/platform-browser": "^15.2.0",
         "@angular/platform-browser-dynamic": "^15.2.0",
         "@angular/router": "^15.2.0",
+        "@sweetalert2/ngx-sweetalert2": "^12.1.0",
         "@typescript-eslint/eslint-plugin": "^5.59.11",
         "@typescript-eslint/parser": "^5.59.11",
+        "dotenv": "^16.3.1",
         "eslint": "^8.42.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-prettier": "^4.2.1",
         "prettier": "^2.8.8",
         "rxjs": "~7.8.0",
+        "sweetalert2": "^11.7.12",
         "zone.js": "~0.12.0"
     },
     "devDependencies": {
