@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from 'src/app/interfaces/User';
 import { UserService } from 'src/app/services/user/user.service';
@@ -46,7 +46,7 @@ export class RegisterComponent implements OnInit {
       return;
     }
     const user: User = this.registerForm.value;
-    this.userService.register(user).subscribe((user) => {
+    this.userService.register(user).subscribe(() => {
       Swal.fire(
         'Sucesso!',
         'Seu registro foi realizado com sucesso!',

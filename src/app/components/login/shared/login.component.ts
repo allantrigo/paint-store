@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
           console.log('aqui');
         }
       },
-      (error) => {
+      () => {
         this.emailFailed = true;
       },
     );
