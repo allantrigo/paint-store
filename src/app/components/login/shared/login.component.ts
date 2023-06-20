@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    console.log('apertado');
     this.emailFailed = false;
     if (this.loginForm.invalid) {
       return;
@@ -43,7 +44,8 @@ export class LoginComponent implements OnInit {
         if (response.ok && response.status === 200) {
           const token = JSON.parse(JSON.stringify(response.body!)).token;
           localStorage.setItem('token', token);
-          this.router.navigateByUrl('/home', {});
+          localStorage.setItem('email', user.email);
+          this.router.navigateByUrl('/home');
         } else if (response.status === 204) {
         } else {
           console.log('aqui');
