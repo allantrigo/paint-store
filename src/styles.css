@@ -11,6 +11,6 @@
 }
 
 .red {
-    border-color: red;
-    outline-color: red;
+    border-color: red !important;
+    outline-color: red !important;
 }
