@@ -3,5 +3,5 @@ export interface Paint {
   name: string;
   year: number;
   color: string;
-  pantoneValue: string;
+  pantone_value: string;
 }

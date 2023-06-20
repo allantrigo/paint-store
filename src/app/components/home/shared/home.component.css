@@ -1,0 +1,97 @@
+.home-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.home-title {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+body {
+    height: 100%;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+.logout-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.email-label {
+    margin-right: 20px;
+}
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.card {
+    width: calc(25% - 20px);
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card .top-box {
+    height: 150px;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.card .name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card .description {
+    margin-top: 5px;
+    color: #888;
+}
+
+.card .info {
+    margin-top: 10px;
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bottom-buttons button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    margin: 0 10px;
+    cursor: pointer;
+}

@@ -9,10 +9,10 @@ export class PaintService {
   private API_HOST = 'https://reqres.in/api/paint';
   constructor(private httpClient: HttpClient) {}
 
-  fetch(page?: number): Observable<JSON> {
+  fetch(page?: number): Observable<any> {
     let url = this.API_HOST;
     if (page) url += `?page=${page}`;
-    return this.httpClient.get<JSON>(url);
+    return this.httpClient.get<any>(url);
   }
 
   findByID(id: number): Observable<JSON> {

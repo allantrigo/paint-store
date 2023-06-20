@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from 'src/app/interfaces/User';
 import { UserService } from 'src/app/services/user/user.service';
@@ -16,10 +16,6 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     this.registerForm = new FormGroup({
-      username: new FormControl('', [
-        Validators.required,
-        Validators.minLength(8),
-      ]),
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [
         Validators.required,
@@ -31,9 +27,6 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  get username() {
-    return this.registerForm.get('username')!;
-  }
   get email() {
     return this.registerForm.get('email')!;
   }
@@ -46,7 +39,7 @@ export class RegisterComponent implements OnInit {
       return;
     }
     const user: User = this.registerForm.value;
-    this.userService.register(user).subscribe((user) => {
+    this.userService.register(user).subscribe(() => {
       Swal.fire(
         'Sucesso!',
         'Seu registro foi realizado com sucesso!',
