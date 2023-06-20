@@ -6,7 +6,7 @@ import { UserService } from 'src/app/services/user/user.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-register',
+  selector: 'register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css'],
 })
@@ -52,7 +52,7 @@ export class RegisterComponent implements OnInit {
         'Seu registro foi realizado com sucesso!',
         'success',
       ).then(() => {
-        this.router.navigateByUrl('/app-login');
+        this.router.navigateByUrl('/login');
       });
     });
   }
