@@ -1,27 +1,38 @@
-# PaintStore
+<p align="center">
+  <a href="http://angular.com/" target="blank"><img src="https://github.com/angular/angular/raw/main/aio/src/assets/images/logos/angular/angular.png" width="200" alt="Angular Logo" /></a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
+<p align="center">Paint Store</p>
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project implements a paint store with user register and login and paint samples. It consumes the [reqres.in](reqres.in) API.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To install the dependencies required for the project, which utilizes Node.js, Angular and Typescript, you can use the following command:
 
-## Build
+```bash
+yarn install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Running the app
 
-## Running unit tests
+To initiate the application, you can execute the subsequent command:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+yarn start
+```
 
-## Running end-to-end tests
+Which will start the server on `http://localhost:4200/`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Testing
 
-## Further help
+To test the login it is needed to use the following email:
+`eve.holt@reqres.in`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+But to test the register function it is possible to use any email.
+
+## License
+
+Nest is [MIT licensed](LICENSE).
