@@ -1,0 +1,135 @@
+<!-- Toolbar
+<div class="toolbar" role="banner"></div>
+
+<div class="content" role="main">
+    <div class="container">
+        <h1>Registro de Usuário</h1>
+        <form (ngSubmit)="submit()" [formGroup]="registerForm" #formDir="ngForm">
+            <div class="form-group">
+                <label for="username"><b>Nome de Usuário</b></label
+        ><br />
+        <input
+          required
+          minlength="8"
+          type="text"
+          placeholder="Nome de Usuário"
+          name="username"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          formControlName="username"
+          [ngClass]="{'red': username.invalid && formDir.submitted}"
+          ngModel
+        />
+        <div *ngIf="username.invalid && formDir.submitted" class="validation-error"> 
+          <p *ngIf="username.errors?.['required']">É necessário ter um nome de usuário.</p> 
+          <p *ngIf="username.errors?.['minlength']">O nome de usuário deve ter mais de 8 caracetéres.</p> 
+        </div>
+      </div>
+      <pre></pre>
+      <br />
+      <div class="form-group">
+        <label for="email"><b>Email</b></label
+        ><br />
+        <input
+          required
+          formControlName="email"
+          email
+          type="text"
+          placeholder="Endereço de email"
+          name="email"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          formControlName="email"
+          [ngClass]="{'red': email.invalid && formDir.submitted}"
+          ngModel
+        />
+        <div *ngIf="email.invalid && formDir.submitted" class="validation-error"> 
+          <p *ngIf="email.errors?.['required']">É necessário inserir um email.</p> 
+          <p *ngIf="email.errors?.['email']">É necessário inserir um email válido.</p> 
+        </div>
+      </div>
+      <pre></pre>
+      <br />
+      <div class="form-group">
+        <label for="password"><b>Senha</b></label
+        ><br />
+        <input
+          formControlName="password"
+          minlength="8"
+          type="text"
+          placeholder="Senha"
+          name="password"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          ngModel
+          formControlName="password"
+          [ngClass]="{'red': password.invalid && formDir.submitted}"
+        />
+        <div *ngIf="password.invalid && formDir.submitted" class="validation-error"> 
+          <p *ngIf="password.errors?.['required']">É necessário inserir uma senha.</p> 
+          <p *ngIf="password.errors?.['minlength']">A senha precisa ter no mínimo 8 caracetéres.</p> 
+          <p *ngIf="password.errors?.['pattern']">A senha precisa ter ao menos uma letra maíuscula, um número e um caracter especial.</p>
+        </div>
+      </div>
+      <button class="btn btn-md btn-primary" type="submit">Registrar</button>
+    </form>
+  </div>
+</div> -->
+
+<body>
+  <div class="card">
+    <h2 class="login-title">Registrar</h2>
+    <form (ngSubmit)="submit()" [formGroup]="registerForm" #formDir="ngForm">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          formControlName="email"
+          [ngClass]="{'red': email.invalid && formDir.submitted}"
+          ngModel
+        />
+        <div
+          *ngIf="email.invalid && formDir.submitted"
+          class="validation-error"
+        >
+          <p *ngIf="email.errors?.['required']">
+            É necessário inserir um email.
+          </p>
+          <p *ngIf="email.errors?.['email']">
+            É necessário inserir um email válido.
+          </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input
+          type="text"
+          id="password"
+          name="password"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          ngModel
+          formControlName="password"
+          [ngClass]="{'red': password.invalid && formDir.submitted}"
+        />
+        <div
+          *ngIf="password.invalid && formDir.submitted"
+          class="validation-error"
+        >
+          <p *ngIf="password.errors?.['required']">
+            É necessário inserir uma senha.
+          </p>
+          <p *ngIf="password.errors?.['minlength']">
+            A senha precisa ter no mínimo 8 caracetéres.
+          </p>
+          <p *ngIf="password.errors?.['pattern']">
+            A senha precisa ter ao menos uma letra maíuscula, um número e um
+            caracter especial.
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </div>
+</body>

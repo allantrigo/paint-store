@@ -1,0 +1,27 @@
+<body>
+  <div class="toolbar">
+    <div>
+      <span class="home-title">Paint Store</span>
+    </div>
+    <div>
+      <span class="email-label">{{ email }}</span>
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </div>
+  </div>
+
+  <ul class="home-content">
+    <li class="card" *ngFor="let paint of paints">
+      <div class="top-box" [style.background-color]="paint.color"></div>
+      <h3 class="name">Nome: {{ paint.name | titlecase }}</h3>
+      <p class="description">Ano: {{ paint.year }}</p>
+      <p class="pantene">Pantone: {{ paint.pantone_value }}</p>
+    </li>
+  </ul>
+
+  <div class="bottom-buttons">
+    <button *ngFor="let page of pages" (click)="changePage(page)">
+      {{ page }}
+    </button>
+  </div>
+  <div style="height: 10px;"></div>
+</body>

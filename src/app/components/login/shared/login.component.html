@@ -1,0 +1,142 @@
+<!-- Toolbar
+<div class="toolbar" role="banner"></div>
+<div class="content" role="main">
+  <div class="container">
+    <h1>Login</h1>
+    <form (ngSubmit)="login()" [formGroup]="loginForm" #formDir="ngForm">
+      <div class="form-group">
+        <label for="email"><b>Email</b></label
+        ><br />
+        <input
+          required
+          formControlName="email"
+          email
+          type="text"
+          placeholder="Endereço de email"
+          name="email"
+          formControlName="email"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          [ngClass]="{
+            red: (email.invalid && formDir.submitted) || emailFailed
+          }"
+          ngModel
+        />
+        <div
+          *ngIf="(email.invalid && formDir.submitted) || emailFailed"
+          class="validation-error"
+        >
+          <p *ngIf="email.errors?.['required']">
+            É necessário inserir um email.
+          </p>
+          <p *ngIf="email.errors?.['email']">
+            É necessário inserir um email válido.
+          </p>
+          <p *ngIf="emailFailed">
+            Email não encontrado.
+          </p>
+        </div>
+      </div>
+      <pre></pre>
+      <br />
+      <div class="form-group">
+        <label for="password"><b>Senha</b></label
+        ><br />
+        <input
+          
+          minlength="8"
+          type="text"
+          placeholder="Senha"
+          name="password"
+          formControlName="password"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          ngModel
+          [ngClass]="{ red: password.invalid && formDir.submitted }"
+        />
+        <div
+          *ngIf="password.invalid && formDir.submitted"
+          class="validation-error"
+        >
+          <p *ngIf="password.errors?.['required']">
+            É necessário inserir uma senha.
+          </p>
+          <p *ngIf="password.errors?.['minlength']">
+            A senha precisa ter no mínimo 8 caracetéres.
+          </p>
+        </div>
+      </div>
+      <button class="btn btn-md btn-primary" type="submit">Login</button>
+    </form>
+    <p>
+      Não possui uma conta? Clique <a href="/register"><b>AQUI</b></a
+      >!
+    </p>
+  </div>
+</div> -->
+
+<body>
+  <div class="card">
+    <h1 class="login-title">Paint Store</h1>
+    <form (ngSubmit)="login()" [formGroup]="loginForm" #formDir="ngForm">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Digite seu email"
+          formControlName="email"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          ngModel
+          [ngClass]="{
+            red: (email.invalid && formDir.submitted) || emailFailed
+          }"
+        />
+        <div
+          *ngIf="(email.invalid && formDir.submitted) || emailFailed"
+          class="validation-error"
+        >
+          <p *ngIf="email.errors?.['required']">
+            É necessário inserir um email.
+          </p>
+          <p *ngIf="email.errors?.['email']">
+            É necessário inserir um email válido.
+          </p>
+          <p *ngIf="emailFailed">
+            Email não encontrado.
+          </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input
+          required
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Digite sua senha"
+          formControlName="password"
+          class="input input-bordered input-primary w-full max-w-xs form-control"
+          ngModel
+          [ngClass]="{ red: password.invalid && formDir.submitted }"
+        />
+        <div
+          *ngIf="password.invalid && formDir.submitted"
+          class="validation-error"
+        >
+          <p *ngIf="password.errors?.['required']">
+            É necessário inserir uma senha.
+          </p>
+          <p *ngIf="password.errors?.['minlength']">
+            A senha precisa ter no mínimo 8 caracetéres.
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+    <div class="register-text">
+      Não tem uma conta? Clique <a href="/register">AQUI</a> para se cadastrar.
+    </div>
+  </div>
+</body>
