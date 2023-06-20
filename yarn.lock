@@ -152,7 +152,7 @@
     symbol-observable "4.0.0"
     yargs "17.6.2"
 
-"@angular/common@^15.2.0", "@angular/common@15.2.9":
+"@angular/common@^14.0.0 || ^15.0.0", "@angular/common@^15.2.0", "@angular/common@15.2.9":
   version "15.2.9"
   resolved "https://registry.npmjs.org/@angular/common/-/common-15.2.9.tgz"
   integrity sha512-LM9/UHG2dRrOzlu2KovrFwWIziFMjRxHzSP3Igw6Symw/wIl0kXGq8Fn6RpFP78zmLqnv+IQOoRiby9MCXsI4g==
@@ -182,7 +182,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^15.2.0", "@angular/core@15.2.9":
+"@angular/core@^14.0.0 || ^15.0.0", "@angular/core@^15.2.0", "@angular/core@15.2.9":
   version "15.2.9"
   resolved "https://registry.npmjs.org/@angular/core/-/core-15.2.9.tgz"
   integrity sha512-w46Z1yUXCQfKV7XfnamOoLA2VD0MVUUYVrUjO73mHSskDXSXxfZAEHO9kfUS71Cj35PvhP3mbkqWscpea2WeYg==
@@ -1461,6 +1461,13 @@
   version "3.1.0"
   resolved "https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
+
+"@sweetalert2/ngx-sweetalert2@^12.1.0":
+  version "12.1.0"
+  resolved "https://registry.npmjs.org/@sweetalert2/ngx-sweetalert2/-/ngx-sweetalert2-12.1.0.tgz"
+  integrity sha512-jECRdLhdw7dsEDv22uJHVbsgQEQVOY64BPRicTfKzEqsIyLwbl3kHh24lCg3UFlD2zLFuqRHrROohU9Wz7q74Q==
+  dependencies:
+    tslib "^2.0.0"
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -2910,6 +2917,11 @@ domutils@^2.8.0:
     dom-serializer "^1.0.1"
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
+
+dotenv@^16.3.1:
+  version "16.3.1"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.3.1.tgz"
+  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
 eastasianwidth@^0.2.0:
   version "0.2.0"
@@ -6227,6 +6239,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+sweetalert2@^11.0.0, sweetalert2@^11.7.12:
+  version "11.7.12"
+  resolved "https://registry.npmjs.org/sweetalert2/-/sweetalert2-11.7.12.tgz"
+  integrity sha512-TQJy8mQymJLzqWPQOMQErd81Zd/rSYr0UL4pEc7bqEihtjS+zt7LWJXLhfPp93e+Hf3Z2FHMB6QGNskAMCsdTg==
+
 symbol-observable@4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-4.0.0.tgz"
@@ -6398,7 +6415,7 @@ tslib@^1.9.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0, tslib@^2.3.0, tslib@^2.5.3:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.5.3:
   version "2.5.3"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.3.tgz"
   integrity sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==
