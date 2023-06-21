@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './shared/home.component';
+import { ProductModule } from '../product/product.module';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, ProductModule],
   declarations: [HomeComponent],
   exports: [HomeComponent],
 })

@@ -8,6 +8,7 @@ import { RegisterModule } from './components/register/register.module';
 import { FormsModule } from '@angular/forms';
 import { LoginModule } from './components/login/login.module';
 import { HomeModule } from './components/home/home.module';
+import { ProductModule } from './components/product/product.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { HomeModule } from './components/home/home.module';
     LoginModule,
     HomeModule,
     HttpClientModule,
+    ProductModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

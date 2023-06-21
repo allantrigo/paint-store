@@ -46,28 +46,9 @@ body {
     width: 100%;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
 .input {
     background-color: #ffffff;
     outline-color: #4CAF50;
-}
-
-.button-container button {
-    padding: 8px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.button-container button:hover {
-    background-color: #45a049;
 }
 
 .register-text {
