@@ -1,0 +1,19 @@
+.top-box {
+    height: 150px;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 5px;
+    color: #888;
+}
+
+.info {
+    margin-top: 10px;
+}
